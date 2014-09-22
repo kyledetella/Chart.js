@@ -237,6 +237,15 @@
 			},this);
 			this.update();
 		},
+    removeDataAtIndex: function (index) {
+      this.scale.removeXLabel();
+
+      helpers.each(this.datasets, function (dataset, i) {
+        dataset.points.splice(index, 1);
+      });
+
+      this.update();
+    },
 		reflow : function(){
 			var newScaleProps = helpers.extend({
 				height : this.chart.height,
