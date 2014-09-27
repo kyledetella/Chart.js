@@ -20,7 +20,7 @@
 		bezierCurve : true,
 
 		//Number - Tension of the bezier curve between points
-		bezierCurveTension : 0.4,
+		bezierCurveTension : 0.9,
 
 		//Boolean - Whether to show a dot for each point
 		pointDot : true,
